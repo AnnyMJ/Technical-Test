@@ -10,7 +10,7 @@ const MainContent = () => {
                 Web Software Developer
                 <p>Working on a better me</p>
                 <div className="btn"> 
-                    <button>Find Out More</button>
+                    <a href='https://www.linkedin.com/in/anny-moronta/'>Find Out More</a>
                 </div>
             </div>
             <img className="img" src={image} alt=''/>

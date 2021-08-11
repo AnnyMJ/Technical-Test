@@ -1,7 +1,13 @@
 .table {
+    &-main-container {
+        display: flex;
+        align-items: flex-end;
+        margin-left: 160px;
+        flex-direction: column;
+    }
     &-container {
         width: 100%;
-        margin: 50px 160px 0;
+        margin: 50px 0 0;
         font-size: 20px;
     }
 }
@@ -16,6 +22,7 @@ td, th {
     border: 2px solid #ef5f63;
     text-align: left;
     padding: 8px;
+    min-width: 180px;
 }
 
 .titles {
@@ -24,3 +31,13 @@ td, th {
     }
 }
 
+button {
+    background-color: #ef5f63;
+    color: #fff;
+    border: none;
+    width: 80px;
+    height: 30px;
+    margin-left: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+}

@@ -14,16 +14,20 @@
             align-items: center;
             display: flex;
             justify-content: flex-start;
-            > button {
+            > a {
                 background-color: #fff;
                 border-radius: 20px;
                 border: 3px solid #ef5f63;
                 color: #ef5f63;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                font-size: 18px;
+                font-size: 14px;
                 font-weight: 900;
-                height: 40px;
+                height: 30px;
                 width: 150px;
+                display: flex;
+                text-decoration: none;
+                justify-content: center;
+                align-items: center;
             }
         }
     }

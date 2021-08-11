@@ -6,7 +6,7 @@ import './styles.scss';
 
 function TechnicalTestPage() {
     const [ companies, setCompanies ] = useState([]);
-    const [ currentCompany, setCurrentCompany ] = useState(companies || '');
+    const [ currentCompany, setCurrentCompany ] = useState(companies || []);
 
     useEffect(() => { 
         axios.get('http://localhost:8080/companies')
@@ -14,10 +14,6 @@ function TechnicalTestPage() {
             setCompanies(res.data)
         });
     }, [])
-
-    const currentCompanyData = companies.filter(function (company) {
-        return company.name === currentCompany;
-    });
 
     return (
         <div className="test-container">
@@ -40,7 +36,7 @@ function TechnicalTestPage() {
                     ))}
                 </select>
             </div>
-            <TableClients data={currentCompanyData} />
+            <TableClients data={companies} current={currentCompany} />
         </div>
   );
 }
