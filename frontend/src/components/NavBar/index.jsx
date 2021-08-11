@@ -3,9 +3,9 @@ import './styles.scss';
 
 const Navbar = () => (
     <>
-        <p className="navbar__logo">Anny</p>
+        <a href="/" className="navbar__logo">Anny</a>
         <ul className="navbar__menu">
-            <li>Test</li>
+            <a href="/test">Test</a>
             <li>CV</li>
             <li>About</li>
             <li>Hooby</li>
