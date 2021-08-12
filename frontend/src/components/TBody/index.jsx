@@ -7,9 +7,9 @@ const TBody = ({ id }) => {
     useEffect(() => { 
         axios.get(`http://localhost:8080/clients/${id}`)
         .then(function (res) {
-            setClient(res.data)
+            setClient(res.data);
         });
-    }, )
+    }, );
 
     return (
         <tr className="table-row">
@@ -27,7 +27,7 @@ const TBody = ({ id }) => {
                 <button>Borrar</button>
             </td>
         </tr>
-    )
-}
+    );
+};
 
 export default TBody;

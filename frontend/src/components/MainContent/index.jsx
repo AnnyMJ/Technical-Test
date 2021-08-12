@@ -15,7 +15,7 @@ const MainContent = () => {
             </div>
             <img className="img" src={image} alt=''/>
         </div>
-    )
+    );
 };
 
 export default MainContent;

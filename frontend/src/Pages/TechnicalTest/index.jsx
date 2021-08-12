@@ -11,9 +11,9 @@ function TechnicalTestPage() {
     useEffect(() => { 
         axios.get('http://localhost:8080/companies')
         .then(function (res) {
-            setCompanies(res.data)
+            setCompanies(res.data);
         });
-    }, [])
+    }, []);
 
     return (
         <div className="test-container">
